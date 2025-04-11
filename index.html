@@ -88,8 +88,20 @@
       border: 3px solid #d4af37;
       box-shadow: 0 0 15px #d4af37;
       z-index: 1;
-      animation: rotateBorder 12s linear infinite;
       position: relative;
+    }
+    .profile-pic::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      width: calc(100% + 12px);
+      height: calc(100% + 12px);
+      border-radius: 50%;
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 10px #d4af37;
+      animation: rotateBorder 12s linear infinite;
+      z-index: -1;
     }
     @keyframes rotateBorder {
       from {
@@ -104,6 +116,8 @@
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
+      position: relative;
+      z-index: 1;
     }
     h1 {
       margin: 20px 0 10px;
