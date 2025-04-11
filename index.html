@@ -8,12 +8,27 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #000;
+      background: linear-gradient(180deg, #000000 0%, #1a1a1a 100%);
       color: #d4af37;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 300%;
+      height: 300%;
+      background-image: url('e4eac6f8-ed25-41d2-9212-5dcb1ebeb0dc.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.03;
+      z-index: 0;
     }
     .profile-pic {
       width: 180px;
@@ -22,6 +37,8 @@
       overflow: hidden;
       margin-top: 30px;
       border: 3px solid #d4af37;
+      box-shadow: 0 0 15px #d4af37;
+      z-index: 1;
     }
     .profile-pic img {
       width: 100%;
@@ -32,6 +49,7 @@
       margin: 20px 0 10px;
       font-size: 28px;
       text-align: center;
+      z-index: 1;
     }
     .links {
       display: flex;
@@ -40,6 +58,7 @@
       margin-top: 20px;
       width: 100%;
       max-width: 400px;
+      z-index: 1;
     }
     .link-btn {
       text-decoration: none;
@@ -49,10 +68,12 @@
       text-align: center;
       border-radius: 30px;
       font-weight: bold;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
     }
     .link-btn:hover {
       background-color: #b58f2d;
+      transform: scale(1.05);
     }
   </style>
 </head>
