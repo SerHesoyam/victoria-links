@@ -38,47 +38,6 @@
       opacity: 0.6;
       z-index: 1;
     }
-    .sparkle {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      background: #fff5cc;
-      border-radius: 50%;
-      animation: sparkleMove 3s linear infinite;
-      box-shadow: 0 0 10px #fff5cc;
-      opacity: 0.7;
-      z-index: 2;
-    }
-    .sparkle:nth-child(1) {
-      top: 60px;
-      left: 50%;
-      animation-delay: 0s;
-    }
-    .sparkle:nth-child(2) {
-      top: 100px;
-      left: 52%;
-      animation-delay: 1s;
-    }
-    .sparkle:nth-child(3) {
-      top: 140px;
-      left: 48%;
-      animation-delay: 2s;
-    }
-    @keyframes sparkleMove {
-      0% {
-        transform: scale(1) translateY(0);
-        opacity: 0.7;
-      }
-      50% {
-        transform: scale(1.5) translateY(-10px);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1) translateY(0);
-        opacity: 0.7;
-      }
-    }
     .profile-pic {
       width: 180px;
       height: 180px;
@@ -171,9 +130,6 @@
 </head>
 <body>
   <div class="profile-pic">
-    <div class="sparkle"></div>
-    <div class="sparkle"></div>
-    <div class="sparkle"></div>
     <img src="8c22c182-b941-471c-89d9-2a3c0a7cfb96.png" alt="Victoria Tsapko">
   </div>
   <h1>Victoria Tsapko</h1>
