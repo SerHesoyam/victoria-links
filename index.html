@@ -30,6 +30,14 @@
       opacity: 0.03;
       z-index: 0;
     }
+    .decorative-line {
+      width: 80%;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #d4af37, transparent);
+      margin: 20px auto;
+      opacity: 0.6;
+      z-index: 1;
+    }
     .profile-pic {
       width: 180px;
       height: 180px;
@@ -68,12 +76,13 @@
       text-align: center;
       border-radius: 30px;
       font-weight: bold;
-      transition: background-color 0.3s, transform 0.2s;
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
       box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
     }
     .link-btn:hover {
       background-color: #b58f2d;
       transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(212, 175, 55, 0.5);
     }
   </style>
 </head>
@@ -82,10 +91,12 @@
     <img src="8c22c182-b941-471c-89d9-2a3c0a7cfb96.png" alt="Victoria Tsapko">
   </div>
   <h1>Victoria Tsapko</h1>
+  <div class="decorative-line"></div>
   <div class="links">
     <a class="link-btn" href="https://t.me/VictoriiaTsapko?fbclid=PAY2xjawJlVXhleHRuA2FlbQIxMQABpxTludgMUafZXjR58erPhPiI9X__DTYkQo6zCcWQ3L0oIPp-tRbVC1zA3_g5_aem_4buMzhxNA_ErEYe-AjCeJg" target="_blank">Telegram</a>
     <a class="link-btn" href="https://www.instagram.com/keratin.victoria.kr" target="_blank">Instagram</a>
     <a class="link-btn" href="https://www.tiktok.com/@keratin.victoria.kr" target="_blank">TikTok</a>
   </div>
+  <div class="decorative-line"></div>
 </body>
 </html>
