@@ -47,11 +47,21 @@
       border: 3px solid #d4af37;
       box-shadow: 0 0 15px #d4af37;
       z-index: 1;
+      animation: rotateBorder 12s linear infinite;
+    }
+    @keyframes rotateBorder {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
     .profile-pic img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 50%;
     }
     h1 {
       margin: 20px 0 10px;
